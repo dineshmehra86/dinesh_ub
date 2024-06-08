@@ -10,6 +10,22 @@
 .secondary_gradient {
   background: rgba(116, 155, 210, 0.5);
 }
+.bg1 {
+  background-color: #F1F6FF;
+}
+.ub_py {
+  padding: 60px 0;
+}
+.light_blue {
+  background-color: #DFEDFF;
+}
+.dark_blue {
+  background-color: #BFDBFF;
+}
+.text_blue {
+  color: #5C7BA6;
+}
+
 
 /* radius class */
 .ubc_bod_radius1 {
@@ -29,6 +45,14 @@ section {
   font-weight: 500;
   color: #ffffff;
   padding: 0;
+  margin: 0;
+}
+.secondary_heading {
+  font-size: 56px;
+  line-height: 67px;
+  font-weight: 500;
+  color: #295BAD;
+  padding: 0 0 60px 0;
   margin: 0;
 }
 .prime_desc {
@@ -102,6 +126,36 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
+
+.ub_benifits {
+  border-radius: 8px;
+  text-align: center;
+  padding: 36px 0 0 0;
+}
+.ub_ben_block {
+  padding: 0 60px;
+}
+.ub_benifits h4 {
+  color: #000000;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.ub_benifits p {
+  color: #5C7BA6;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding-bottom: 50px;
+}
+/* .ub_benifits img {
+  width: 495px;
+  height: 206px;
+} */
+
+
+
 
 @media only screen and (max-width: 767px) {
   .header {
