@@ -33,7 +33,7 @@
   color: #5C7BA6;
 }
 
-.ub_d-flex {
+.ub_d_flex {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -316,6 +316,87 @@ line-height: 22px;
 font-weight: 500;
 color: #293B55;
 }
+
+.icon_w_bg {
+  background: rgba(180, 211, 255, 0.5);
+  border-radius: 8px;
+  padding: 14px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.icon_w_bg.bg_none {
+  background: none;
+}
+.icon_w_bg_text {
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+color: #000000;
+}
+.uc_diff_box {
+  border: 8px solid rgba(230, 237, 245, 1);
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 40px 28px;
+  transition: .5s all ease-in-out;
+}
+.box_border {
+  border: 8px solid rgba(37, 37, 37, 1);
+}
+
+.client_logo {
+  padding-bottom: 39px;
+}
+
+.ub_heading_small {
+  color: #353535;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.compare_list {
+list-style: none;  
+}
+
+.compare_list li{
+font-size: 16px;
+line-height: 32px;
+font-weight: 500;
+color: #646464;
+position: relative;
+padding-left: 44px;
+padding-bottom: 16px;
+}
+
+.compare_list li::before{
+position: absolute;
+content: '🚫';
+left: 0;
+top: 0;
+background-color: rgba(255, 242, 242, 1);
+width: 32px;
+height: 32px;
+border-radius: 6px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.compare_list.emozi_bg_color li::before {
+  content: '👍';
+  background-color: rgba(255, 247, 223, 1);
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 992px) {
