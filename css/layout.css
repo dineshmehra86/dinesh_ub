@@ -445,14 +445,65 @@ font-weight: 500;
   color: #717984;
 }
 
+.footer_part {
+  background-color: #0F0F0F;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 16px 0;
+  color: #ffffff;
+}
 
-
-
+.more_question {
+  margin-top: 48px;
+}
+.more_question h2{
+font-size: 24px;
+line-height: 36px;
+font-weight: 500;
+color: #000;
+padding-bottom: 4px;
+}
+.more_question p{
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+color: #686868;
+}
+.input_box {
+  border-bottom: 1px solid #A4A4A4;
+  max-width: 673px;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.input_box input{
+  border: none;
+  background-color: transparent;
+  width: 80%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.input_box input:focus{
+  border: none;
+  outline: none;
+}
+.form_btn {
+  background: none;
+  border: none;
+}
 
 
 @media only screen and (max-width: 992px) {
   .vehicle_info {
     height: 70vh;
+  }
+  .footer_part {
+    font-size: 12px;
+    line-height: 16px;
   }
  }
 
@@ -463,6 +514,22 @@ font-weight: 500;
   .vehicle_info {
     height: 100%;
   }
+  .more_question h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .more_question p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .input_box input{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form_btn img {
+   width: 24px;
+  }
+  
  
  }
 
