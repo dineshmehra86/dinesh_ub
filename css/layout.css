@@ -392,7 +392,58 @@ justify-content: center;
   content: '👍';
   background-color: rgba(255, 247, 223, 1);
 }
+.uc_coll {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.uc_coll img {
+  margin-bottom: 0;
+  border-radius: 10px;
+  vertical-align: middle;
+}
 
+.uc_faqs {
+  
+}
+.uc_faqs .accordion-item {
+margin-bottom: 16px;
+border-radius: 8px;
+border: 1px solid #D5DFEC;
+background: rgba(235, 243, 255, 0.5);
+}
+.uc_faqs .accordion-header {
+background: rgba(235, 243, 255, 0.5);
+}
+.uc_faqs .accordion-button {
+  background: rgba(235, 243, 255, 0.5);
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  font-weight: 500;
+}
+.uc_faqs .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+  background: rgba(235, 243, 255, 0.5);
+}
+.uc_faqs .accordion-button:not(.collapsed) {
+  background: rgba(235, 243, 255, 0.5);
+  box-shadow: none;
+  font-size: 18px;
+line-height: 27px;
+color: #000;
+font-weight: 500;
+}
+.uc_faqs .accordion-body {
+  padding-top: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #717984;
+}
 
 
 
@@ -412,6 +463,7 @@ justify-content: center;
   .vehicle_info {
     height: 100%;
   }
+ 
  }
 
 
@@ -426,5 +478,4 @@ justify-content: center;
   .vehicle_info {
     height: 100%;
   }
-  
 }
