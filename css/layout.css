@@ -13,6 +13,13 @@
 .bg1 {
   background-color: #F1F6FF;
 }
+.bg2 {
+  background-color: #E9F1FF;
+}
+.bg3 {
+  background-color: #B5D5FF;
+}
+
 .ub_py {
   padding: 60px 0;
 }
@@ -26,6 +33,11 @@
   color: #5C7BA6;
 }
 
+.ub_d-flex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 
 /* radius class */
 .ubc_bod_radius1 {
@@ -70,6 +82,18 @@ section {
   color: #ffffff;
   padding: 12px 0 0 0;
   margin: 0;
+}
+.heading_desc {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #626271;
+}
+.heading_desc2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5C7BA6;
 }
 /* buttons */
 .btn_primary {
@@ -135,6 +159,10 @@ header {
 .ub_ben_block {
   padding: 0 60px;
 }
+.ub_content-wrap {
+  min-height: 20vh;
+  height: 100%;
+}
 .ub_benifits h4 {
   color: #000000;
   font-size: 26px;
@@ -147,14 +175,163 @@ header {
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
-/* .ub_benifits img {
-  width: 495px;
-  height: 206px;
-} */
+.ub_benifits img {
+  /* width: 350px; */
+  height: 185px;
+}
+.info_section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #646464;
+}
+.info_icon {
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 100%;
+  margin-left: 12px;
+  margin-right: 12px;
+  
+}
+.vehicle_options {
+  background-color: #CFEDFF;
+  border-radius: 24px;
+}
+.vehicle_options.dark_blue {
+  background-color: #BFDBFF;
+}
+.vehicle_options.yellow_light {
+  background-color: #FFF8EA;
+}
+.vehicle_view {
+  position: relative;
+  padding: 28px 30px;
+  height: 266px;  
+
+}
+.vehicle_view::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../img/pattern.png") no-repeat left top;
+  width: 100%;
+  background-size: auto;
+  height: 100%;
+  background-size: cover;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+.vehicle_info {
+  padding: 28px 24px;
+  min-height: 45vh;
+  height: 100%;
+}
+.vehicle_info h3 {
+  color: #262626;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.vehicle_info_list {
+  list-style: disc;
+  margin-left: 20px;
+}
+.vehicle_info_list li{
+  line-height: normal;
+  color: #4F545B;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.feature_list {
+  list-style: none;
+  margin: 40px 0 0 0;
+}
+.feature_list li{
+  line-height: normal;
+  color: #4F545B;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.feature_list li h5{
+  color: #2266BE;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  padding-bottom: 14px;
+  line-height: normal;
+}
+.feature_list li p{
+  color: #5C7BA6;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  line-height: normal;
+}
+
+.ub_intrest {
+  padding-top: 37px;
+}
+
+.smart_ride_list {
+  list-style: none;
+  display: flex;
+  margin-top: 52px;
+}
+.smart_ride_list li {
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+.smart_ride_list li i{
+  background: rgba(180, 211, 255, 0.5);
+  border-radius: 24px;
+  width: 124px;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.smart_ride_list li span{
+font-size: 18px;
+line-height: 22px;
+font-weight: 500;
+color: #293B55;
+}
 
 
+@media only screen and (max-width: 992px) {
+  .vehicle_info {
+    height: 70vh;
+  }
+ }
+
+ @media only screen and (max-width: 991px) {
+  .vehicle_view {
+    height: auto;
+  }
+  .vehicle_info {
+    height: 100%;
+  }
+ }
 
 
 @media only screen and (max-width: 767px) {
@@ -165,4 +342,8 @@ header {
   .logo_box img{
     width: 90px;
   }
+  .vehicle_info {
+    height: 100%;
+  }
+  
 }
