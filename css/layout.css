@@ -532,8 +532,13 @@ color: #686868;
   .form_btn img {
    width: 24px;
   }
-  
- 
+  .uc_coll {
+    flex: auto;
+    max-width: 100%;
+  }
+  .uc_coll img{
+  padding: 0;
+  }
  }
 
 
@@ -686,4 +691,14 @@ color: #686868;
       font-size: 13px;
       line-height: 18px;
     }
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 479px) {
+  
 }
