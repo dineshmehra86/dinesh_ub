@@ -1,7 +1,9 @@
 @import "./reset.css";
 @import "./fonts.css";
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* Gradient Color list */
 .primary_gradient {
@@ -130,6 +132,9 @@ header {
   align-items: center;
   gap: 16px;
 }
+.logo_box img {
+  width: 127px;
+}
 
 .nav_main {
   display: flex;
@@ -141,7 +146,8 @@ header {
   list-style: none;
   display: flex;
   gap: 48px;
-  margin-right: 200px;
+  margin-left: 102px;
+  margin-right: 20px;
 }
 .nav_bar li{
   line-height: normal;
@@ -500,6 +506,26 @@ color: #686868;
 }
 
 
+
+@media only screen and (max-width: 1399px) {
+  .nav_bar {
+    margin-right: 20px;
+    gap: 25px;
+  }
+  .nav_bar li a {
+    font-size: 15px;
+  }
+ }
+@media only screen and (max-width: 1299px) {
+  .nav_bar {
+    margin-right: 20px;
+    gap: 20px;
+  }
+  .nav_bar li a {
+    font-size: 14px;
+  }
+ }
+
 @media only screen and (max-width: 992px) {
   .vehicle_info {
     height: 70vh;
@@ -508,7 +534,20 @@ color: #686868;
     font-size: 12px;
     line-height: 16px;
   }
+  .btn_primary {
+    padding: 14px 20px;
+  }
+  
+  .nav_bar {
+    margin-right: 20px;
+    gap: 20px;
+  }
+  .nav_bar li a {
+    font-size: 14px;
+  }
  }
+
+ 
 
  @media only screen and (max-width: 991px) {
   .vehicle_view {
@@ -539,10 +578,47 @@ color: #686868;
   .uc_coll img{
   padding: 0;
   }
+
+/* Css for mobile menu bar start */
+.mobile_none {
+  display: none;
+}
+.mobile_display {
+  position: relative;
+}
+.nav_mobile {
+  display: block;
+    position: absolute;
+    right: 0;
+    background-color: #2266BE;
+    top: 30px;
+    padding: 10px 28px 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+}
+.nav_mobile ul{
+  display: inherit;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 24px;
+  transition: 0.5s;
+}
+.nav_mobile ul li{
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.nav_mobile button {
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  transition: 0.5s;
+}
+/* Css for mobile menu bar start */
  }
 
-
-@media only screen and (max-width: 767px) {
+ 
+ @media only screen and (max-width: 767px) {
   .header {
     padding: 11px 12px;
     border-radius: 4.86px;
@@ -695,10 +771,3 @@ color: #686868;
     
 }
 
-@media only screen and (max-width: 480px) {
-  
-}
-
-@media only screen and (max-width: 479px) {
-  
-}

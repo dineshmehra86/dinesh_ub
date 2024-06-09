@@ -24,33 +24,40 @@
                     <div class="row">
                         <div class="col-4 col-sm-3 d_form_col d_tbdr d-flex align-items-center">
                             <div class="logo_box inline-flex justify-items-center">
-                                <img src="./img/urban_logo.svg">
+                                <img src="./img/urban_logo.png">
                                 <span class="seprator d-flex"></span>
-                                <img src="./img/barkeley_logo.svg">
+                                <img src="./img/barkeley_logo.png">
                               </div>
                         </div>
-                        <div class="col-8 col-sm-9 d_form_col d_tbdr d-block d-sm-none">
-                            <div class="d-block d-sm-none">
-                                <ul class="nav float-end mt-2 d_tnr">
+                        <div class="col-8 col-sm-9 d_form_col d_tbdr d-lg-none mobile_display">
+                            <div class="position-relative">
+                                <ul class="nav float-end mt-2 d_tnr mobile_display">
                                     <li class="nav-item">
-                                        <a class="nav-link pt-1 pb-1 ps-0 pe-0" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal" href="#">
+                                        <a class="nav-link pt-1 pb-1 ps-0 pe-0 navbar-toggler" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation" href="#">
                                             <i class="fa-solid fa-bars text-dark"></i>
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-9 ps-0 pe-0 d-lg-flex justify-content-lg-end">
-                            <div class="d-none d-sm-block d_tbdr">
-                                <div class="nav_main">
+                                <div class="nav_main nav_mobile collapse navbar-collapse" id="navbarsExample05">
                                     <ul class="nav_bar mt-0 d_menu d-lg-flex align-items-lg-center">
                                         <li><a href="#">Program</a></li>
                                           <li><a href="#">Subsidy</a></li>
-                                          <li><a href="#">Vehicle Option</a></li>
-                                          <li><a href="#">Benifits</a></li>
-                                          <li><a href="#">Location</a></li>
-                                       
+                                          <li><a href="#vehicleOption">Vehicle Option</a></li>
+                                          <li><a href="#benifitsOption">Benifits</a></li>
+                                    </ul>
+                                    <button class="btn_primary flex justify-items-between items-center">Apply Now</button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9 ps-0 pe-0 d-lg-flex justify-content-lg-end mobile_none">
+                            <div class="d-none d-sm-block d_tbdr w-100">
+                                <div class="nav_main nav_mobile">
+                                    <ul class="nav_bar mt-0 d_menu d-lg-flex align-items-lg-center">
+                                        <li><a href="#">Program</a></li>
+                                          <li><a href="#">Subsidy</a></li>
+                                          <li><a href="#vehicleOption">Vehicle Option</a></li>
+                                          <li><a href="#benifitsOption">Benifits</a></li>
                                     </ul>
                                     <button class="btn_primary flex justify-items-between items-center">Apply Now</button>
                                   </div>
@@ -85,7 +92,7 @@
 
     </section>
     
-    <section class="bg1 ub_py">
+    <section class="bg1 ub_py" id="benifitsOption">
         <div class="container d_cont d_tbdr ps-0 pe-0">
             <div class="row m-0 h-100">
                 <div class="col-12 col-md-12 col-lg-12 p-0 d_tbdr h-100">
@@ -155,7 +162,7 @@
         </div>
     </section>
 
-    <section class="bg2 ub_py">
+    <section class="bg2 ub_py" id="vehicleOption">
         <div class="container d_cont d_tbdr ps-0 pe-0">
             <div class="row m-0 h-100">
                 <div class="col-12 col-md-12 col-lg-10 mx-auto d_tbdr h-100 pb-4 pb-lg-5">
