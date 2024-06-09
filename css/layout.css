@@ -89,6 +89,9 @@ section {
   font-weight: 500;
   color: #626271;
 }
+.uc_color_black {
+  color: #000;
+}
 .heading_desc2 {
   font-size: 16px;
   line-height: 22px;
@@ -273,7 +276,6 @@ header {
   line-height: 28px;
   font-weight: 600;
   padding-bottom: 14px;
-  line-height: normal;
 }
 .feature_list li p{
   color: #5C7BA6;
@@ -387,6 +389,7 @@ text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
+padding-top: 3px;
 }
 .compare_list.emozi_bg_color li::before {
   content: '👍';
@@ -539,10 +542,148 @@ color: #686868;
     padding: 11px 12px;
     border-radius: 4.86px;
   }
+  header {
+    padding-bottom: 37px;
+  }
   .logo_box img{
     width: 90px;
   }
   .vehicle_info {
     height: 100%;
   }
+  .prime_heading {
+    font-size: 36px;
+    line-height: 43px;
+    padding-bottom: 26px;
+  }
+  .uc_mt-32 {
+    margin-top: 32px;
+  }
+  section {
+    padding:0 0 38px 0;
+  }
+  .small_sub_desc {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    }
+    .prime_desc {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .secondary_heading {
+      font-size: 28px;
+      line-height: 33px;
+      padding-bottom: 28px;
+    }
+    .ub_py {
+      padding: 28px 0;
+    }
+    .ub_benifits h4 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .ub_benifits {
+      padding-top: 24px;
+    }
+    .ub_benifits p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .info_section {
+      display: none;
+    }
+    .heading_desc {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .btn_primary {
+      padding: 14px 20px;
+    }
+    .vehicle_info h3 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .vehicle_info {
+      min-height: auto;
+    }
+    .vehicle_info_list li {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .feature_list {
+      margin-top: 9px;
+    }
+    .feature_list li h5 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .feature_list li p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .feature_list li {
+      padding-bottom: 20px;
+    }
+    .feature_list li:last-child {
+      padding-bottom: 0px;
+    }
+    .mobile_img_gap {
+      padding-top: 28px;
+    }
+    .uc_rounded_16 {
+      border-radius: 16px;
+    }
+    .ub_intrest {
+      padding-top: 8px;
+    }
+    .heading_desc2 {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .smart_ride_list li i {
+      width: 62px;
+      height: 62px;
+      border-radius: 12px;
+    }
+    .smart_ride_list li i img {
+      width: 32px;
+      height: 32px;
+    }
+    .smart_ride_list li span {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .ub_heading_small {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .compare_list li {
+      font-size: 12px;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    padding-left: 38px;
+    }
+    .compare_list li::before {
+      width: 24px;
+      height: 24px;
+      font-size: 14px;
+    }
+    .icon_w_bg_text {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .uc_faqs .accordion-button {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .uc_faqs .accordion-button:not(.collapsed) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .uc_faqs .accordion-body {
+      font-size: 13px;
+      line-height: 18px;
+    }
 }
