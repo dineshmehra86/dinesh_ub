@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,8 +28,6 @@
                         <div class="col-4 col-sm-3 d_form_col d_tbdr d-flex align-items-center">
                             <div class="logo_box inline-flex justify-items-center">
                                 <img src="./img/urban_logo.png">
-                                <span class="seprator d-flex"></span>
-                                <img src="./img/barkeley_logo.png">
                             </div>
                         </div>
                         <div class="col-8 col-sm-9 d_form_col d_tbdr d-lg-none mobile_display">
@@ -36,13 +35,20 @@
                                 <ul class="nav float-end mt-2 d_tnr mobile_display">
                                     <li class="nav-item">
                                         <a class="nav-link pt-1 pb-1 ps-0 pe-0 navbar-toggler" data-bs-toggle="collapse"
-                                            data-bs-target="#navbarsExample05" aria-controls="navbarsExample05"
+                                            data-bs-target="#navBarMenu1" aria-controls="navBarMenu1"
                                             aria-expanded="false" aria-label="Toggle navigation" href="#">
                                             <i class="fa-solid fa-bars text-dark"></i>
                                         </a>
                                     </li>
                                 </ul>
-                                <div class="nav_main nav_mobile collapse navbar-collapse" id="navbarsExample05">
+                                <div class="nav_main nav_mobile collapse navbar-collapse" id="navBarMenu1">
+                                    <div class="cross_icon">
+                                        <a class="nav-link pt-1 pb-1 ps-0 pe-0 navbar-toggler" data-bs-toggle="collapse"
+                                            data-bs-target="#navBarMenu1" aria-controls="navBarMenu1"
+                                            aria-expanded="false" aria-label="Toggle navigation" href="#">
+                                            <i class="fa-solid fa-close text-dark text-right"></i>
+                                        </a>
+                                        </div>
                                     <ul class="nav_bar mt-0 d_menu d-lg-flex align-items-lg-center">
                                         <li><a href="javascript:void(0);"
                                                 onclick="scrollToSection('programOption')">Program</a></li>
@@ -101,13 +107,13 @@
                     <div class="col-md-6">
                         <div class="video_frame rounded">
                             <iframe class="rounded img-fluid"
-                                src="https://www.youtube.com/embed/wV2A6-NQmLY?si=gnOjGiPf2viOTiTJ&rel=0"
+                                src="https://www.youtube.com/embed/AF0-bmp4_as?si=5gtnvFTlfUOo5V_U?&rel=0"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <!-- <img src="./img/banner_img.svg" class="img-fluid rounded"> -->
-                        <p class="small_sub_desc">(From UC trainer on benefits having your own scooty)</p>
+                        <p class="small_sub_desc text-center">(From UC trainer on benefits having your own scooty)</p>
                     </div>
                 </div>
             </div>
@@ -120,7 +126,7 @@
         <div class="container d_cont d_tbdr ps-0 pe-0">
             <div class="row m-0 h-100">
                 <div class="col-12 col-md-12 col-lg-12 p-0 d_tbdr h-100">
-                    <h1 class="secondary_heading text-center">Benefits of “Aapki Nayi Dost Program”</h1>
+                    <h1 class="secondary_heading text-center">Benefits of <br> “Aapki Nayi Dost Program”</h1>
                 </div>
             </div>
             <div class="row m-0 h-100">
@@ -195,7 +201,7 @@
         <div class="container d_cont d_tbdr ps-0 pe-0">
             <div class="row m-0 h-100">
                 <div class="col-12 col-md-12 col-lg-10 mx-auto d_tbdr h-100 pb-4 pb-lg-5">
-                    <h1 class="secondary_heading pb-2">Vehicle Options Choose Your Ride!</h1>
+                    <h1 class="secondary_heading pb-2">Vehicle Options <br>Choose Your Ride!</h1>
                     <p class="heading_desc ub_d_flex">Offer open in Delhi NCR, Coming Soon to other cities.</p>
                     <button class="btn_primary flex justify-items-between items-center mt-3 mt-lg-3"
                         onclick="openWhatsApp()">Apply Now</button>
@@ -381,17 +387,17 @@
         <div class="container d_cont d_tbdr ps-0 pe-0">
             <div class="row m-0 h-100">
                 <div class="col-12 col-md-12 col-lg-12 p-0 d_tbdr h-100">
-                    <h1 class="secondary_heading text-center">What makes us Different?</h1>
+                    <h1 class="secondary_heading text-center">What makes us<br> Different?</h1>
                 </div>
             </div>
             <div class="row m-0 h-100">
                 <div class="col-12 col-md-12 col-lg-8 mx-auto">
                     <div class="row">
-                        <div class="col-12 col-md-12 col-lg-6 d_tbdr h-100 mb-3 order-2 order-lg-0">
+                        <div class="col-12 col-md-12 col-lg-6 d_tbdr h-100 mb-3 order-2 order-lg-0 two_col_div">
                             <div class="uc_diff_box">
                                 <div class="client_logo d-flex align-items-center justify-content-center">
-                                    <i class="icon_w_bg"><img src="./img/other_icon.svg"></i><span
-                                        class="icon_w_bg_text">other</span>
+                                    
+                                        <span class="merchant_logo"><img src="./img/other_logo.png" class="img-fluid"></span>
                                 </div>
                                 <ul class="compare_list">
                                     <h5 class="ub_heading_small">Benefits included</h5>
@@ -403,21 +409,36 @@
                                     <li><span>Basic customer service</span></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-6 d_tbdr h-100 mb-3">
                             <div class="uc_diff_box box_border">
                                 <div class="client_logo d-flex align-items-center justify-content-center">
-                                    <i class="icon_w_bg bg_none"><img src="./img/ub_logo.svg"></i><span
-                                        class="icon_w_bg_text">Urban Company</span>
+                                   
+                                        <span class="merchant_logo"><img src="./img/urban_logo_diff.png" class="img-fluid"></span>
                                 </div>
                                 <ul class="compare_list emozi_bg_color">
                                     <h5 class="ub_heading_small">Aapki Nayi Dost Program, Benefits are</h5>
-                                    <li><span>None or minimal Discounts</span></li>
-                                    <li><span>No low EMI options</span></li>
-                                    <li><span>No flexible EMI options</span></li>
-                                    <li><span>Limited support</span></li>
-                                    <li><span>Standard waiting period</span></li>
-                                    <li><span>Basic customer service</span></li>
+                                    <li><span>Instant ₹3,500 Discount & upto ₹10,000</span></li>
+                                    <li><span>EMI starting as low as ₹2,777</span></li>
+                                    <li><span>EMI terms available from 12 to 36 months</span></li>
+                                    <li><span>End-to-end loan assistance</span></li>
+                                    <li><span>Two wheeler within 1 week if approved</span></li>
+                                    <li><span>Dedicated support for workers</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 d_tbdr h-100 mb-3 d-none">
+                            <div class="uc_diff_box box_border">
+                                <div class="client_logo d-flex align-items-center justify-content-center">
+                                   
+                                        <span class="merchant_logo"><img src="./img/urban_logo_diff.png" class="img-fluid"></span>
+                                </div>
+                                <ul class="compare_list emozi_bg_color">
+                                    <h5 class="ub_heading_small">Aapki Nayi Dost Program, Benefits are</h5>
+                                    <li><span>Instant ₹3,500 Discount & upto ₹10,000</span></li>
+                                    <li><span>EMI starting as low as ₹2,777</span></li>
+                                    <li><span>EMI terms available from 12 to 36 months</span></li>
+                                    <li><span>End-to-end loan assistance</span></li>
+                                    <li><span>Two wheeler within 1 week if approved</span></li>
+                                    <li><span>Dedicated support for workers</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -497,7 +518,8 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         Click on I'm interested. It will open a whatsapp chat. We will chat with you
-                                        live!
+                                        live!<br>
+                                        You can also directly whatsapp us at 9599872835
                                     </div>
                                 </div>
                             </div>
@@ -579,19 +601,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="more_question">
-                            <h2>
-                                Have more questions?
-                            </h2>
-                            <p class="heading_desc">
-                                Type your question below our team will answer you soon!</p>
-                            <form>
-                                <div class="input_box">
-                                    <input type="" value="" placeholder="Type your question here...">
-                                    <button class="form_btn"><img src="./img/right_arrow.svg"></button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
 
@@ -605,8 +614,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <p>All copy rights reserved 2024 • Urban Company | University of California, Berkeley • Privacy
-                        Policy • Terms & Conditions</p>
+                    <p>All copy rights reserved 2024 • Urban Company • Privacy Policy • Terms & Conditions</p>
                 </div>
             </div>
         </div>

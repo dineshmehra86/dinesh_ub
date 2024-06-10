@@ -117,8 +117,8 @@ section {
 }
 
 .secondary_heading {
-  font-size: 56px;
-  line-height: 67px;
+  font-size: 48px;
+  line-height: 57px;
   font-weight: 500;
   color: #295BAD;
   padding: 0 0 60px 0;
@@ -436,16 +436,35 @@ header {
   color: #000000;
 }
 
+
+.two_col_div {
+  display: flex;
+  width: 100%;
+}
 .uc_diff_box {
   border: 8px solid rgba(230, 237, 245, 1);
   background-color: #fff;
   border-radius: 24px;
   padding: 40px 28px;
   transition: .5s all ease-in-out;
+  width: 100%;
 }
+
+.merchant_logo {
+width: 134px;
+}
+.cross_icon {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #2266BE;
+}
+
 
 .box_border {
   border: 8px solid rgba(37, 37, 37, 1);
+  margin-left: 20px;
 }
 
 .client_logo {
@@ -695,6 +714,17 @@ header {
 
 
 @media only screen and (max-width: 991px) {
+  .two_col_div {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .box_border {
+    margin-left: 0;
+  }
+  .uc_diff_box {
+    margin-bottom: 16px;
+  }
   .ub_benifits img {
     height: auto;
   }
