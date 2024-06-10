@@ -290,14 +290,17 @@ header {
   gap: 24px;
   margin: 0 auto;
 }
+
 .vehicle_three_col .vehicle_options {
   min-height: auto;
   height: auto;
 }
+
 .vehicle_three_col .vehicle_info {
   min-height: auto;
   height: auto;
 }
+
 .vehicle_options {
   background-color: #CFEDFF;
   border-radius: 24px;
@@ -457,6 +460,7 @@ header {
   display: flex;
   width: 100%;
 }
+
 .uc_diff_box {
   border: 8px solid rgba(230, 237, 245, 1);
   background-color: #fff;
@@ -467,8 +471,9 @@ header {
 }
 
 .merchant_logo {
-width: 134px;
+  width: 134px;
 }
+
 .cross_icon {
   position: absolute;
   right: 10px;
@@ -587,6 +592,11 @@ width: 134px;
   line-height: 27px;
   font-weight: 400;
   color: #717984;
+}
+
+.uc_faqs .accordion-body p {
+  margin: 0;
+  padding-bottom: 2px;
 }
 
 .footer_part {
@@ -735,21 +745,25 @@ width: 134px;
     width: 100%;
     margin: 0 auto;
   }
+
   .vehicle_three_col {
     display: block;
     width: 100%;
     margin: 0 auto;
   }
+
   .vehicle_three_col .vehicle_options {
     margin-bottom: 24px;
   }
-  
+
   .box_border {
     margin-left: 0;
   }
+
   .uc_diff_box {
     margin-bottom: 16px;
   }
+
   .ub_benifits img {
     height: auto;
   }
@@ -1022,6 +1036,7 @@ width: 134px;
     font-size: 13px;
     line-height: 18px;
   }
+
   .vehicle_options {
     min-height: 100%;
   }
