@@ -967,6 +967,8 @@ header {
     font-size: 13px;
     line-height: 18px;
   }
-
+  .vehicle_options {
+    min-height: 100%;
+  }
 
 }
