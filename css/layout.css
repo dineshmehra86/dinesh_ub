@@ -294,6 +294,8 @@ header {
 .vehicle_three_col .vehicle_options {
   min-height: auto;
   height: auto;
+  margin: 0 0px;
+  width: 100%;
 }
 
 .vehicle_three_col .vehicle_info {
