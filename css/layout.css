@@ -5,19 +5,67 @@ html {
   scroll-behavior: smooth;
 }
 
+.uc_scrollToTop {
+  /* animation: scrollToTop 0.5s linear infinite alternate; */
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  right: 15px;
+  bottom: 10px;
+  text-align: center;
+  background-color: rgba(41, 91, 173, 0.8);
+  color: #fff;
+  display: none;
+  z-index: 99;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.uc_scrollToTop i {
+  font-size: 14px;
+  color: #fff;
+}
+
+.uc_scrollToTop:hover {
+  background-color: #0056b3;
+}
+
+/* Show the button when scrolled */
+body.scrolled .uc_scrollToTop {
+  display: block;
+}
+
+
+
+@keyframes scrollToTop {
+  from {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
 /* Gradient Color list */
 .primary_gradient {
   background: linear-gradient(135.32deg, #2266BE 0%, #799FD3 75.14%);
 }
+
 .secondary_gradient {
   background: rgba(116, 155, 210, 0.5);
 }
+
 .bg1 {
   background-color: #F1F6FF;
 }
+
 .bg2 {
   background-color: #E9F1FF;
 }
+
 .bg3 {
   background-color: #B5D5FF;
 }
@@ -25,12 +73,15 @@ html {
 .ub_py {
   padding: 60px 0;
 }
+
 .light_blue {
   background-color: #DFEDFF;
 }
+
 .dark_blue {
   background-color: #BFDBFF;
 }
+
 .text_blue {
   color: #5C7BA6;
 }
@@ -45,14 +96,17 @@ html {
 .ubc_bod_radius1 {
   border-radius: 12px;
 }
+
 .seprator {
   background-color: #B4B4B4;
   width: 1px;
   height: 40px;
 }
+
 section {
   padding: 0 0 70px 0;
 }
+
 .prime_heading {
   font-size: 74px;
   line-height: 88px;
@@ -61,6 +115,7 @@ section {
   padding: 0;
   margin: 0;
 }
+
 .secondary_heading {
   font-size: 56px;
   line-height: 67px;
@@ -69,6 +124,7 @@ section {
   padding: 0 0 60px 0;
   margin: 0;
 }
+
 .prime_desc {
   font-size: 24px;
   line-height: 36px;
@@ -77,6 +133,7 @@ section {
   padding: 0 0 18px 0;
   margin: 0;
 }
+
 .small_sub_desc {
   font-size: 16px;
   line-height: 24px;
@@ -85,25 +142,29 @@ section {
   padding: 12px 0 0 0;
   margin: 0;
 }
+
 .heading_desc {
   font-size: 18px;
   line-height: 25px;
   font-weight: 500;
   color: #626271;
 }
+
 .uc_color_black {
   color: #000;
 }
+
 .heading_desc2 {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #5C7BA6;
 }
+
 /* buttons */
 .btn_primary {
   background: #000;
-  padding:14px 30px;
+  padding: 14px 30px;
   color: #fff;
   border-radius: 8px;
   display: flex;
@@ -132,6 +193,7 @@ header {
   align-items: center;
   gap: 16px;
 }
+
 .logo_box img {
   width: 127px;
 }
@@ -142,6 +204,7 @@ header {
   align-items: center;
   width: auto;
 }
+
 .nav_bar {
   list-style: none;
   display: flex;
@@ -149,10 +212,12 @@ header {
   margin-left: 102px;
   margin-right: 20px;
 }
-.nav_bar li{
+
+.nav_bar li {
   line-height: normal;
 }
-.nav_bar li a{
+
+.nav_bar li a {
   line-height: 20px;
   font-size: 16px;
   font-weight: 400;
@@ -165,13 +230,16 @@ header {
   text-align: center;
   padding: 36px 0 0 0;
 }
+
 .ub_ben_block {
   padding: 0 60px;
 }
+
 .ub_content-wrap {
   min-height: 20vh;
   height: 100%;
 }
+
 .ub_benifits h4 {
   color: #000000;
   font-size: 26px;
@@ -179,6 +247,7 @@ header {
   font-weight: 600;
   padding-bottom: 20px;
 }
+
 .ub_benifits p {
   color: #5C7BA6;
   font-size: 16px;
@@ -186,10 +255,12 @@ header {
   font-weight: normal;
   padding-bottom: 10px;
 }
+
 .ub_benifits img {
   /* width: 350px; */
   height: 185px;
 }
+
 .info_section {
   display: flex;
   justify-content: left;
@@ -201,37 +272,44 @@ header {
   font-weight: 500;
   color: #646464;
 }
+
 .info_icon {
   background-color: #fff;
   padding: 6px;
   border-radius: 100%;
   margin-left: 12px;
   margin-right: 12px;
-  
+
 }
+
 .vehicle_options {
   background-color: #CFEDFF;
   border-radius: 24px;
+  min-height: 82vh;
+  height: 100%;
 }
+
 .vehicle_options.dark_blue {
   background-color: #BFDBFF;
 }
+
 .vehicle_options.yellow_light {
   background-color: #FFF8EA;
 }
+
 .vehicle_view {
   position: relative;
   padding: 28px 30px;
-  height: 266px;  
-
+  height: 266px;
 }
+
 .vehicle_view::before {
   display: block;
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  background: url("../img/pattern.png") no-repeat left top;
+  background: url("../img/pattern.png") no-repeat center top;
   width: 100%;
   background-size: auto;
   height: 100%;
@@ -239,11 +317,13 @@ header {
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
 }
+
 .vehicle_info {
   padding: 28px 24px;
-  min-height: 45vh;
+  min-height: 328px;
   height: 100%;
 }
+
 .vehicle_info h3 {
   color: #262626;
   font-size: 32px;
@@ -256,7 +336,8 @@ header {
   list-style: disc;
   margin-left: 20px;
 }
-.vehicle_info_list li{
+
+.vehicle_info_list li {
   line-height: normal;
   color: #4F545B;
   font-size: 18px;
@@ -264,11 +345,13 @@ header {
   font-weight: 400;
   padding-bottom: 5px;
 }
+
 .feature_list {
   list-style: none;
   margin: 40px 0 0 0;
 }
-.feature_list li{
+
+.feature_list li {
   line-height: normal;
   color: #4F545B;
   font-size: 18px;
@@ -276,14 +359,16 @@ header {
   font-weight: 400;
   padding-bottom: 30px;
 }
-.feature_list li h5{
+
+.feature_list li h5 {
   color: #2266BE;
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
   padding-bottom: 14px;
 }
-.feature_list li p{
+
+.feature_list li p {
   color: #5C7BA6;
   font-size: 16px;
   line-height: 22px;
@@ -301,6 +386,7 @@ header {
   display: flex;
   margin-top: 52px;
 }
+
 .smart_ride_list li {
   line-height: normal;
   display: flex;
@@ -308,7 +394,8 @@ header {
   justify-content: center;
   padding: 0 10px 0 10px;
 }
-.smart_ride_list li i{
+
+.smart_ride_list li i {
   background: rgba(180, 211, 255, 0.5);
   border-radius: 24px;
   width: 124px;
@@ -318,11 +405,12 @@ header {
   justify-content: center;
   margin-bottom: 12px;
 }
-.smart_ride_list li span{
-font-size: 18px;
-line-height: 22px;
-font-weight: 500;
-color: #293B55;
+
+.smart_ride_list li span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #293B55;
 }
 
 .icon_w_bg {
@@ -336,15 +424,18 @@ color: #293B55;
   justify-content: center;
   margin-right: 12px;
 }
+
 .icon_w_bg.bg_none {
   background: none;
 }
+
 .icon_w_bg_text {
-font-size: 24px;
-font-weight: 600;
-line-height: 30px;
-color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000000;
 }
+
 .uc_diff_box {
   border: 8px solid rgba(230, 237, 245, 1);
   background-color: #fff;
@@ -352,6 +443,7 @@ color: #000000;
   padding: 40px 28px;
   transition: .5s all ease-in-out;
 }
+
 .box_border {
   border: 8px solid rgba(37, 37, 37, 1);
 }
@@ -368,39 +460,42 @@ color: #000000;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+
 .compare_list {
-list-style: none;  
+  list-style: none;
 }
 
-.compare_list li{
-font-size: 16px;
-line-height: 32px;
-font-weight: 500;
-color: #646464;
-position: relative;
-padding-left: 44px;
-padding-bottom: 16px;
+.compare_list li {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #646464;
+  position: relative;
+  padding-left: 44px;
+  padding-bottom: 16px;
 }
 
-.compare_list li::before{
-position: absolute;
-content: '🚫';
-left: 0;
-top: 0;
-background-color: rgba(255, 242, 242, 1);
-width: 32px;
-height: 32px;
-border-radius: 6px;
-text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-padding-top: 3px;
+.compare_list li::before {
+  position: absolute;
+  content: '🚫';
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 242, 242, 1);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
 }
+
 .compare_list.emozi_bg_color li::before {
   content: '👍';
   background-color: rgba(255, 247, 223, 1);
 }
+
 .uc_coll {
   flex: 50%;
   max-width: 50%;
@@ -408,24 +503,26 @@ padding-top: 3px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .uc_coll img {
   margin-bottom: 0;
   border-radius: 10px;
   vertical-align: middle;
 }
 
-.uc_faqs {
-  
-}
+.uc_faqs {}
+
 .uc_faqs .accordion-item {
-margin-bottom: 16px;
-border-radius: 8px;
-border: 1px solid #D5DFEC;
-background: rgba(235, 243, 255, 0.5);
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #D5DFEC;
+  background: rgba(235, 243, 255, 0.5);
 }
+
 .uc_faqs .accordion-header {
-background: rgba(235, 243, 255, 0.5);
+  background: rgba(235, 243, 255, 0.5);
 }
+
 .uc_faqs .accordion-button {
   background: rgba(235, 243, 255, 0.5);
   font-size: 18px;
@@ -433,19 +530,22 @@ background: rgba(235, 243, 255, 0.5);
   color: #000;
   font-weight: 500;
 }
+
 .uc_faqs .accordion-button:focus {
   border-color: none;
   box-shadow: none;
   background: rgba(235, 243, 255, 0.5);
 }
+
 .uc_faqs .accordion-button:not(.collapsed) {
   background: rgba(235, 243, 255, 0.5);
   box-shadow: none;
   font-size: 18px;
-line-height: 27px;
-color: #000;
-font-weight: 500;
+  line-height: 27px;
+  color: #000;
+  font-weight: 500;
 }
+
 .uc_faqs .accordion-body {
   padding-top: 0;
   font-size: 18px;
@@ -466,19 +566,22 @@ font-weight: 500;
 .more_question {
   margin-top: 48px;
 }
-.more_question h2{
-font-size: 24px;
-line-height: 36px;
-font-weight: 500;
-color: #000;
-padding-bottom: 4px;
+
+.more_question h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 4px;
 }
-.more_question p{
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
-color: #686868;
+
+.more_question p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #686868;
 }
+
 .input_box {
   border-bottom: 1px solid #A4A4A4;
   max-width: 673px;
@@ -487,7 +590,8 @@ color: #686868;
   display: flex;
   justify-content: space-between;
 }
-.input_box input{
+
+.input_box input {
   border: none;
   background-color: transparent;
   width: 80%;
@@ -496,98 +600,152 @@ color: #686868;
   font-weight: 400;
   color: #000;
 }
-.input_box input:focus{
+
+.input_box input:focus {
   border: none;
   outline: none;
 }
+
 .form_btn {
   background: none;
   border: none;
 }
 
+.ytp-impression-link {
+  display: none;
+}
 
+.video_frame {
+  width: 100%;
+  height: 408px;
+}
+
+.video_frame iframe {
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 1399px) {
   .nav_bar {
     margin-right: 20px;
     gap: 25px;
   }
+
   .nav_bar li a {
     font-size: 15px;
   }
- }
+
+  .vehicle_info {
+    min-height: 351px;
+  }
+}
+
 @media only screen and (max-width: 1299px) {
   .nav_bar {
     margin-right: 20px;
     gap: 20px;
   }
+
   .nav_bar li a {
     font-size: 14px;
   }
- }
+}
+
+@media only screen and (max-width: 1298px) {
+  .vehicle_view {
+    height: 215px;
+  }
+
+  .vehicle_info {
+    padding: 20px 24px;
+    min-height: 280px;
+  }
+
+  .vehicle_info h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .vehicle_info_list li {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 
 @media only screen and (max-width: 992px) {
-  .vehicle_info {
-    height: 70vh;
-  }
   .footer_part {
     font-size: 12px;
     line-height: 16px;
   }
+
   .btn_primary {
     padding: 14px 20px;
   }
-  
+
   .nav_bar {
     margin-right: 20px;
     gap: 20px;
   }
+
   .nav_bar li a {
     font-size: 14px;
   }
- }
+}
 
- 
 
- @media only screen and (max-width: 991px) {
+
+@media only screen and (max-width: 991px) {
+  .ub_benifits img {
+    height: auto;
+  }
+
   .vehicle_view {
     height: auto;
   }
+
   .vehicle_info {
     height: 100%;
   }
+
   .more_question h2 {
     font-size: 18px;
     line-height: 27px;
   }
+
   .more_question p {
     font-size: 12px;
     line-height: 18px;
   }
-  .input_box input{
+
+  .input_box input {
     font-size: 12px;
     line-height: 18px;
   }
+
   .form_btn img {
-   width: 24px;
+    width: 24px;
   }
+
   .uc_coll {
     flex: auto;
     max-width: 100%;
   }
-  .uc_coll img{
-  padding: 0;
+
+  .uc_coll img {
+    padding: 0;
   }
 
-/* Css for mobile menu bar start */
-.mobile_none {
-  display: none;
-}
-.mobile_display {
-  position: relative;
-}
-.nav_mobile {
-  display: block;
+  /* Css for mobile menu bar start */
+  .mobile_none {
+    display: none;
+  }
+
+  .mobile_display {
+    position: relative;
+  }
+
+  .nav_mobile {
+    display: block;
     position: absolute;
     right: 0;
     background-color: #2266BE;
@@ -596,178 +754,219 @@ color: #686868;
     transition: 0.5s;
     border-radius: 10px;
     border-top-right-radius: 0;
-}
-.nav_mobile ul{
-  display: inherit;
-  margin-right: 0;
-  margin-left: 0;
-  padding-top: 24px;
-  transition: 0.5s;
-}
-.nav_mobile ul li{
-  margin-bottom: 10px;
-  transition: 0.5s;
-}
-.nav_mobile button {
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 18px;
-  transition: 0.5s;
-}
-/* Css for mobile menu bar start */
- }
+  }
 
- 
- @media only screen and (max-width: 767px) {
+  .nav_mobile ul {
+    display: inherit;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 24px;
+    transition: 0.5s;
+  }
+
+  .nav_mobile ul li {
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+
+  .nav_mobile button {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    transition: 0.5s;
+  }
+
+  /* Css for mobile menu bar start */
+}
+
+
+@media only screen and (max-width: 767px) {
   .header {
     padding: 11px 12px;
     border-radius: 4.86px;
   }
+
   header {
     padding-bottom: 37px;
   }
-  .logo_box img{
+
+  .logo_box img {
     width: 90px;
   }
+
   .vehicle_info {
     height: 100%;
   }
+
   .prime_heading {
     font-size: 36px;
     line-height: 43px;
     padding-bottom: 26px;
   }
+
   .uc_mt-32 {
     margin-top: 32px;
   }
+
   section {
-    padding:0 0 38px 0;
+    padding: 0 0 38px 0;
   }
+
   .small_sub_desc {
     font-size: 12px;
     line-height: 18px;
     text-align: center;
-    }
-    .prime_desc {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .secondary_heading {
-      font-size: 28px;
-      line-height: 33px;
-      padding-bottom: 28px;
-    }
-    .ub_py {
-      padding: 28px 0;
-    }
-    .ub_benifits h4 {
-      font-size: 20px;
-      line-height: 24px;
-    }
-    .ub_benifits {
-      padding-top: 24px;
-    }
-    .ub_benifits p {
-      font-size: 14px;
-      line-height: 18px;
-    }
-    .info_section {
-      display: none;
-    }
-    .heading_desc {
-      font-size: 13px;
-      line-height: 18px;
-    }
-    .btn_primary {
-      padding: 14px 20px;
-    }
-    .vehicle_info h3 {
-      font-size: 24px;
-      line-height: 36px;
-    }
-    .vehicle_info {
-      min-height: auto;
-    }
-    .vehicle_info_list li {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .feature_list {
-      margin-top: 9px;
-    }
-    .feature_list li h5 {
-      font-size: 18px;
-      line-height: 20px;
-    }
-    .feature_list li p {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .feature_list li {
-      padding-bottom: 20px;
-    }
-    .feature_list li:last-child {
-      padding-bottom: 0px;
-    }
-    .mobile_img_gap {
-      padding-top: 28px;
-    }
-    .uc_rounded_16 {
-      border-radius: 16px;
-    }
-    .ub_intrest {
-      padding-top: 8px;
-    }
-    .heading_desc2 {
-      font-size: 13px;
-      line-height: 18px;
-    }
-    .smart_ride_list li i {
-      width: 62px;
-      height: 62px;
-      border-radius: 12px;
-    }
-    .smart_ride_list li i img {
-      width: 32px;
-      height: 32px;
-    }
-    .smart_ride_list li span {
-      font-size: 12px;
-      line-height: 15px;
-    }
-    .ub_heading_small {
-      font-size: 12px;
-      line-height: 14px;
-    }
-    .compare_list li {
-      font-size: 12px;
+  }
+
+  .prime_desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .secondary_heading {
+    font-size: 28px;
+    line-height: 33px;
+    padding-bottom: 28px;
+  }
+
+  .ub_py {
+    padding: 28px 0;
+  }
+
+  .ub_benifits h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .ub_benifits {
+    padding-top: 24px;
+  }
+
+  .ub_benifits p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .info_section {
+    display: none;
+  }
+
+  .heading_desc {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .btn_primary {
+    padding: 14px 20px;
+  }
+
+  .vehicle_info h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .vehicle_info {
+    min-height: auto;
+  }
+
+  .vehicle_info_list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .feature_list {
+    margin-top: 9px;
+  }
+
+  .feature_list li h5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .feature_list li p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .feature_list li {
+    padding-bottom: 20px;
+  }
+
+  .feature_list li:last-child {
+    padding-bottom: 0px;
+  }
+
+  .mobile_img_gap {
+    padding-top: 28px;
+  }
+
+  .uc_rounded_16 {
+    border-radius: 16px;
+  }
+
+  .ub_intrest {
+    padding-top: 8px;
+  }
+
+  .heading_desc2 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .smart_ride_list li i {
+    width: 62px;
+    height: 62px;
+    border-radius: 12px;
+  }
+
+  .smart_ride_list li i img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .smart_ride_list li span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .ub_heading_small {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .compare_list li {
+    font-size: 12px;
     line-height: 24px;
     height: 24px;
     margin-bottom: 12px;
     padding-left: 38px;
-    }
-    .compare_list li::before {
-      width: 24px;
-      height: 24px;
-      font-size: 14px;
-    }
-    .icon_w_bg_text {
-      font-size: 18px;
-      line-height: 21px;
-    }
-    .uc_faqs .accordion-button {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .uc_faqs .accordion-button:not(.collapsed) {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .uc_faqs .accordion-body {
-      font-size: 13px;
-      line-height: 18px;
-    }
-    
-    
-}
+  }
 
+  .compare_list li::before {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+  }
+
+  .icon_w_bg_text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .uc_faqs .accordion-button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .uc_faqs .accordion-button:not(.collapsed) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .uc_faqs .accordion-body {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+
+}
