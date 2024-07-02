@@ -1,11 +1,13 @@
 // This is whatsApp opening code
 function openWhatsApp() {
-  var countryCode = '91'; // Country code
-  var phoneNumber = '9599872835'; // Phone number without country code
-  var fullPhoneNumber = countryCode + phoneNumber;
-  var message = encodeURIComponent("Hello, Thanks for connecting I am Urban Company, How may I help you");
-  // Append the ID of the section to the WhatsApp URL
-  window.open('https://wa.me/' + fullPhoneNumber + '?text=' + message + '#whatsappSection', '_blank');
+// Comment the message section to show whatsapp chat without message
+var message = encodeURIComponent("Hi! I am interested in getting a scooty.");
+
+// use below code to show whatsapp chat with message
+window.open('https://api.whatsapp.com/send/?phone=919599872835&type=phone_number&app_absent=0&text=' + message + '#whatsappSection', '_blank');
+
+// use below code to show whatsapp chat without message
+// window.open('https://api.whatsapp.com/send/?phone=919599872835&type=phone_number&app_absent=0' + '#whatsappSection', '_blank');
 }
 
 
