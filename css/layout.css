@@ -30,6 +30,16 @@ html {
   background-color: #0056b3;
 }
 
+.btn_primary.mobile_apply_btn {
+  padding: 8px 20px;
+  font-size: 12px;
+  line-height: 18px;
+  transition: 0.5s;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
 /* Show the button when scrolled */
 body.scrolled .uc_scrollToTop {
   display: block;
@@ -818,9 +828,9 @@ header {
   .nav_mobile {
     display: block;
     position: absolute;
-    right: 0;
+    right: -10px;
     background-color: #2266BE;
-    top: 30px;
+    top: 53px;
     padding: 10px 28px 20px;
     transition: 0.5s;
     border-radius: 10px;
@@ -841,8 +851,8 @@ header {
   }
 
   .nav_mobile button {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 8px 20px;
+    font-size: 12px;
     line-height: 18px;
     transition: 0.5s;
   }
