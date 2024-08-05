@@ -23,7 +23,26 @@ button {
   width: 489px;
   position: absolute;
   right: 0;
+  display: none;
+  transition: all 5s ease-in;
 }
+.desktop_drop_down.center_align_menu {
+left: 50%;
+transform: translate(-50%, -0%);
+max-width: 489px;
+width: 100%;
+}
+.menuContent {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menuContent.show {
+  display: block;
+  opacity: 1;
+}
+
 .header_drop_down.whatsapp_wrap {
   display: flex;
   gap: 12px;
@@ -253,7 +272,7 @@ section {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  color: #5C7BA6;
+  color: #4F4F4F;
 }
 
 /* buttons */
@@ -580,7 +599,7 @@ header {
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
-  color: #293B55;
+  color: #505050;
 }
 
 .icon_w_bg {
@@ -1016,11 +1035,20 @@ font-family: 'interregular';
   .nav_bar li a {
     font-size: 14px;
   }
+  .feature_sub_title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .feature_list li {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 
 
 @media only screen and (max-width: 991px) {
+
   .desktop_view {
     display: none;
   }
@@ -1290,7 +1318,7 @@ font-family: 'interregular';
   }
 
   .feature_list li {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .feature_list li:last-child {
