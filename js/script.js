@@ -29,31 +29,6 @@ window.addEventListener('scroll', function() {
 });
 
 
-
-
-// document.getElementById('openDropDown').addEventListener('click', function() {
-//   var menuContent = document.getElementById('menuContent');
-//   if (menuContent.classList.contains('show')) {
-//       menuContent.classList.remove('show');
-//       setTimeout(function() {
-//           menuContent.style.display = 'none';
-//       }, 300); // Match this duration to the CSS transition duration
-//   } else {
-//       menuContent.style.display = 'block';
-//       setTimeout(function() {
-//           menuContent.classList.add('show');
-//       }, 10); // Small delay to ensure display:block is applied before the opacity transition
-
-//        // Automatically close the menu after 3 seconds
-//        setTimeout(function() {
-//         menuContent.classList.remove('show');
-//         setTimeout(function() {
-//             menuContent.style.display = 'none';
-//         }, 500); // Match this duration to the CSS transition duration
-//     }, 3000); // Close after 3 seconds
-//   }
-// });
-
 document.querySelectorAll('.openDropDown').forEach(button => {
   button.addEventListener('click', function() {
       var targetId = this.getAttribute('data-target');
@@ -71,12 +46,12 @@ document.querySelectorAll('.openDropDown').forEach(button => {
           }, 10); // Small delay to ensure display:block is applied before the opacity transition
 
           // Automatically close the menu after 3 seconds
-          // setTimeout(function() {
-          //     menuContent.classList.remove('show');
-          //     setTimeout(function() {
-          //         menuContent.style.display = 'none';
-          //     }, 500); // Match this duration to the CSS transition duration
-          // }, 5000); // Close after 3 seconds
+          setTimeout(function() {
+              menuContent.classList.remove('show');
+              setTimeout(function() {
+                  menuContent.style.display = 'none';
+              }, 500); // Match this duration to the CSS transition duration
+          }, 5000); // Close after 3 seconds
       }
   });
 });

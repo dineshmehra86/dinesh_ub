@@ -4,14 +4,17 @@
 html {
   scroll-behavior: smooth;
 }
+
 button {
   font-family: 'interregular';
 }
+
 .white_wrap {
   background-color: #ffffff;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
+
 .blue_color {
   color: #295BAD;
 }
@@ -26,12 +29,14 @@ button {
   display: none;
   transition: all 5s ease-in;
 }
+
 .desktop_drop_down.center_align_menu {
-left: 50%;
-transform: translate(-50%, -0%);
-max-width: 489px;
-width: 100%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  max-width: 489px;
+  width: 100%;
 }
+
 .menuContent {
   display: none;
   opacity: 0;
@@ -48,13 +53,16 @@ width: 100%;
   gap: 12px;
   margin-top: 0px;
 }
+
 .header_drop_down.whatsapp_wrap li {
   max-width: 100%;
   width: 100%;
 }
+
 .header_drop_down.whatsapp_wrap li p {
   padding-top: 12px;
 }
+
 .drop_down_title {
   font-size: 28px;
   line-height: 33px;
@@ -68,6 +76,7 @@ width: 100%;
   gap: 28px;
   margin-top: 30px;
 }
+
 .whatsapp_wrap li {
   border-radius: 12px;
   padding: 16px 24px;
@@ -81,10 +90,12 @@ width: 100%;
   justify-content: space-between;
   align-items: center;
 }
+
 .whatsapp_wrap li:hover {
   background: #dfedfd;
   transition: all .2s ease-in;
 }
+
 .whatsapp_wrap li small {
   font-size: 20px;
   line-height: 24px;
@@ -92,6 +103,7 @@ width: 100%;
   color: #000000;
   padding-left: 8px;
 }
+
 .whatsapp_wrap li p {
   font-size: 18px;
   line-height: 20px;
@@ -174,6 +186,7 @@ body.scrolled .uc_scrollToTop {
 .bg3 {
   background-color: #B5D5FF;
 }
+
 .bg4 {
   background-color: #ffffff;
 }
@@ -188,8 +201,9 @@ body.scrolled .uc_scrollToTop {
 
 .dark_blue {
   /* background-color: #BFDBFF; */
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfdbff+0,7db9e8+74,fcfcfc+92 */
-background: linear-gradient(to bottom,  #bfdbff 0%,#bfdbff 74%,#fcfcfc 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfdbff+0,7db9e8+74,fcfcfc+92 */
+  background: linear-gradient(to bottom, #bfdbff 0%, #bfdbff 74%, #fcfcfc 80%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 
 
@@ -289,6 +303,7 @@ section {
   border: none;
   margin: 0;
 }
+
 .bg_text_higlight {
   background: #fff;
   padding: 0 12px;
@@ -406,6 +421,7 @@ header {
   font-weight: 400;
   color: #646464;
 }
+
 /* .info_section span{
   font-size: 16px;
   line-height: 20px;
@@ -417,6 +433,7 @@ header {
   padding: 0;
   margin: 0;
 }
+
 .mobile_view {
   display: none;
   padding: 0;
@@ -429,6 +446,7 @@ header {
   margin-right: 12px;
   width: 32px;
 }
+
 .info_icon img {
   width: 100%;
 }
@@ -504,6 +522,7 @@ header {
   font-weight: 600;
   padding-bottom: 4px;
 }
+
 .vehicle_info p {
   line-height: normal;
   color: #7B7B7B;
@@ -643,6 +662,7 @@ header {
 .merchant_logo {
   width: 134px;
 }
+
 .merchant_logo.merchant_logo_other {
   max-width: 351px;
   width: 100%;
@@ -781,15 +801,17 @@ header {
   padding: 0;
   gap: 18px;
 }
+
 .faqs_v2 li {
-border: #99BFFF 4px solid;
-border-radius: 24px;
-padding: 20px 28px;
-background-color: #ffffff;
-/* max-width: 636px;
+  border: #99BFFF 4px solid;
+  border-radius: 24px;
+  padding: 20px 28px;
+  background-color: #ffffff;
+  /* max-width: 636px;
 width: 100%; */
-flex-basis: 49%;
+  flex-basis: 49%;
 }
+
 .list_num_value {
   background-color: #CEE2FF;
   border-radius: 100%;
@@ -809,25 +831,26 @@ flex-basis: 49%;
 }
 
 .faqs_v2 li h4 {
-padding: 0;
-margin: 0;
-font-size: 24px;
-line-height: 28px;
-font-weight: 600;
-color: #000;
-font-family: 'interregular';
-padding-bottom: 20px;
-display: flex;
-align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #000;
+  font-family: 'interregular';
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
+
 .faqs_v2 li p {
-padding: 0 0 10px 0;
-margin: 0;
-font-size: 18px;
-line-height: 27px;
-font-weight: 400;
-color: #000;
-font-family: 'interregular';
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000;
+  font-family: 'interregular';
 }
 
 
@@ -912,6 +935,20 @@ font-family: 'interregular';
   align-items: center;
 }
 
+.btn_primary.mobile_contactus {
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: normal;
+  transition: 0.5s;
+}
+
+.humburg_button_wrap {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  gap: 20px;
+}
+
 
 
 
@@ -919,18 +956,21 @@ font-family: 'interregular';
   .whatsapp_wrap {
     gap: 10px;
   }
+
   .whatsapp_wrap li {
     padding: 16px 12px;
   }
+
   .whatsapp_wrap li small {
     font-size: 14px;
     line-height: 16px;
   }
+
   .whatsapp_wrap li p {
     font-size: 14px;
     line-height: 20px;
   }
-  
+
   .nav_bar {
     margin-right: 20px;
     gap: 25px;
@@ -983,10 +1023,12 @@ font-family: 'interregular';
     line-height: 15px;
     padding-bottom: 12px;
   }
+
   .faqs_v2 li p {
     font-size: 12px;
     line-height: 18px;
   }
+
   .list_num_value {
     width: 24px;
     height: 24px;
@@ -994,10 +1036,12 @@ font-family: 'interregular';
     line-height: 20px;
     padding: 0px 8px;
   }
+
   .faqs_v2 li {
     flex-basis: 100%;
     padding: 16px 20px 6px;
   }
+
   /* .merchant_logo.merchant_logo_other {
     width: 244px;
   } */
@@ -1015,7 +1059,7 @@ font-family: 'interregular';
     font-size: 14px;
     line-height: 20px;
   } */
-  
+
   .footer_part {
     font-size: 12px;
     line-height: 16px;
@@ -1035,10 +1079,12 @@ font-family: 'interregular';
   .nav_bar li a {
     font-size: 14px;
   }
+
   .feature_sub_title {
     font-size: 18px;
     line-height: 20px;
   }
+
   .feature_list li {
     font-size: 13px;
     line-height: 20px;
@@ -1048,10 +1094,21 @@ font-family: 'interregular';
 
 
 @media only screen and (max-width: 991px) {
+  .desktop_drop_down {
+    right: 33px;
+    width: 295px;
+    padding-bottom: 14px;
+  }
+
+  .drop_down_title {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   .desktop_view {
     display: none;
   }
+
   .mobile_view {
     display: block;
   }
@@ -1060,18 +1117,21 @@ font-family: 'interregular';
     display: block;
     width: 100%;
   }
-  .whatsapp_wrap li{
+
+  .whatsapp_wrap li {
     max-width: 100%;
     margin-bottom: 12px;
     padding: 12px 16px;
     height: auto;
   }
-  .whatsapp_wrap li small{
+
+  .whatsapp_wrap li small {
     font-size: 14px;
     line-height: 16px;
     font-weight: 600;
   }
-  .whatsapp_wrap li p{
+
+  .whatsapp_wrap li p {
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
@@ -1080,10 +1140,11 @@ font-family: 'interregular';
   .bg_text_higlight {
     font-size: 13px;
   }
+
   .faqs_v2 li {
     flex-basis: 100%;
   }
-  
+
   .two_col_div {
     display: block;
     width: 100%;
@@ -1198,9 +1259,11 @@ font-family: 'interregular';
     font-size: 12px;
     line-height: 14px;
   }
+
   .ub_content-wrap {
     padding-top: 0;
   }
+
   .header {
     padding: 11px 12px;
     border-radius: 4.86px;
@@ -1272,6 +1335,7 @@ font-family: 'interregular';
   .desktop_view {
     display: none;
   }
+
   .mobile_view {
     display: block;
   }
@@ -1289,6 +1353,7 @@ font-family: 'interregular';
     font-size: 14px;
     line-height: 16px;
   }
+
   .vehicle_info p {
     font-size: 12px;
     line-height: 14px;
