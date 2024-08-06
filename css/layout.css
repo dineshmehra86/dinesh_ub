@@ -8,7 +8,9 @@ html {
 button {
   font-family: 'interregular';
 }
-
+.line_break {
+  display: block;
+}
 .white_wrap {
   background-color: #ffffff;
   border-bottom-left-radius: 24px;
@@ -1018,6 +1020,20 @@ width: 100%; */
 }
 
 @media only screen and (max-width: 992px) {
+  .help_icon_v2 {
+    width: 18px;
+  }
+  .help_icon_v2  img{
+    width: 100%;
+  }
+
+  .line_break {
+    display: none;
+  }
+  .vehicle_info_list {
+    margin-left: 14px;
+    padding: 0;
+  }
   .faqs_v2 li h4 {
     font-size: 13px;
     line-height: 15px;
@@ -1139,6 +1155,9 @@ width: 100%; */
 
   .bg_text_higlight {
     font-size: 13px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
   }
 
   .faqs_v2 li {
@@ -1167,6 +1186,12 @@ width: 100%; */
 
   .uc_diff_box {
     margin-bottom: 16px;
+  }
+  .ub_benifits {
+    padding-top: 24px;
+  }
+  .ub_content-wrap {
+    padding-top: 0;
   }
 
   .ub_benifits img {
