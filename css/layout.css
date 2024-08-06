@@ -423,6 +423,9 @@ header {
   font-weight: 400;
   color: #646464;
 }
+.info_section.help_text_v2 {
+  font-size: 13px;
+}
 
 /* .info_section span{
   font-size: 16px;
@@ -951,7 +954,16 @@ width: 100%; */
   gap: 20px;
 }
 
-
+.help_icon_v2 {
+  width: 18px;
+  margin-right: 10px;
+  justify-content: right;
+  font-size: 15px;
+  line-height: normal;
+}
+.help_icon_v2  img{
+  width: 100%;
+}
 
 
 @media only screen and (max-width: 1399px) {
@@ -1020,12 +1032,7 @@ width: 100%; */
 }
 
 @media only screen and (max-width: 992px) {
-  .help_icon_v2 {
-    width: 18px;
-  }
-  .help_icon_v2  img{
-    width: 100%;
-  }
+  
 
   .line_break {
     display: none;
